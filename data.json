@@ -1,0 +1,153 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Laptop"
+    },
+    {
+      "id": 2,
+      "name": "Phone"
+    },
+    {
+      "id": 3,
+      "name": "Tablet"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "name": "Laptop 1",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec laptop xin xo nhat viet nam",
+      "image": "",
+      "status": true,
+      "key": 1
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "name": "Laptop 2",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec laptop xin xo nhat viet nam",
+      "image": "",
+      "status": true
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "name": "Laptop 4",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec laptop xin xo nhat viet nam",
+      "image": "",
+      "status": true,
+      "key": 4
+    },
+    {
+      "id": 8,
+      "categoryId": 1,
+      "name": "Laptop 8",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec laptop xin xo nhat viet nam",
+      "image": "",
+      "status": true
+    },
+    {
+      "id": 9,
+      "categoryId": 2,
+      "name": "Phone 1",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec phone xin xo nhat viet nam",
+      "image": "",
+      "status": true,
+      "key": 9
+    },
+    {
+      "id": 10,
+      "categoryId": 2,
+      "name": "Phone 2",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec phone xin xo nhat viet nam",
+      "image": "",
+      "status": true
+    },
+    {
+      "id": 13,
+      "categoryId": 3,
+      "name": "Tablet 1",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec tablet xin xo nhat viet nam",
+      "image": "",
+      "status": true
+    },
+    {
+      "id": 14,
+      "categoryId": 3,
+      "name": "Tablet 2",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec tablet xin xo nhat viet nam",
+      "image": "",
+      "status": true
+    },
+    {
+      "id": 15,
+      "categoryId": 3,
+      "name": "Tablet 3",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec tablet xin xo nhat viet nam",
+      "image": "",
+      "status": true
+    },
+    {
+      "id": 16,
+      "categoryId": 3,
+      "name": "Tablet 4",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec tablet xin xo nhat viet nam",
+      "image": "",
+      "status": true
+    },
+    {
+      "id": 17,
+      "categoryId": 3,
+      "name": "Tablet 5",
+      "old_price": 100000,
+      "new_price": 90000,
+      "feature": "test",
+      "short_description": "Test short",
+      "description": "Day la chiec tablet xin xo nhat viet nam",
+      "image": "",
+      "status": true
+    }
+  ]
+}
