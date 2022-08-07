@@ -149,7 +149,7 @@ const UpdateProduct = () => {
             <label className="block mb-2 text-base">Danh mục</label>
               <Select value={adminStore.categories.find(c => c.id === category_id)?.name} className="w-full" onChange={onChangeCategory}>
                 {adminStore.categories.map((category: Category) => (
-                  <Option value={`${category.id}`}>{category.name}</Option>
+                  <Option value={`${category.id}`} key={category.id}>{category.name}</Option>
                 ))}
               </Select>
           </div>

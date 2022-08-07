@@ -1,29 +1,43 @@
 import './App.css'
 import '../node_modules/antd/dist/antd.css'
-import ZAdminLayout from './components/ZAdminLayout'
-import ZAdminHeader from './components/ZAdminHeader'
-import ZAdminMenu, { ZMenuItem } from './components/ZAdminMenu';
-import ZAdminLayoutContent from './components/ZAdminLayoutContent';
-import PhoneIcon from "./assets/images/phone.svg"
-import TabletIcon from "./assets/images/tablet.svg"
-import LaptopIcon from "./assets/images/laptop.svg"
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ToastContainer from './components/Toast'
+import Home from './pages'
+import CartPage from './pages/cart'
+import Dashboard from './pages/dashboard'
+import Categories from './pages/dashboard/categories'
+import Products from './pages/dashboard/products'
+import CreateProduct from './pages/dashboard/products/create'
+import UpdateProduct from './pages/dashboard/products/update'
+import HomePage from './pages/home'
+import Login from './pages/login'
+import ProductPage from './pages/product'
+import Register from './pages/register'
 
 function App() {
-  const menuItems: ZMenuItem[] = [
-    { title: "Điện thoại", url: "/products", icon: PhoneIcon },
-    { title: "Laptop", url: "/products", icon: LaptopIcon },
-    { title: "Máy tính bảng", url: "/products", icon: TabletIcon },
-  ]
-
   return (
-    <ZAdminLayout>
-      <ZAdminHeader />
-      <div className="flex bg-gray-100 flex-auto min-height-0">
-        <ZAdminMenu items={menuItems} />
-        <ZAdminLayoutContent />
-      </div>
-    </ZAdminLayout>
-  )
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/product/:id" element={<ProductPage />} />
+      </Route>
+      <Route path="/dashboard" element={<Dashboard />}>
+        <Route path="/dashboard/products">
+          <Route path="/dashboard/products/create" element={<CreateProduct />} />
+          <Route path="/dashboard/products/update/:id" element={<UpdateProduct />} />
+          <Route path="/dashboard/products/" element={<Products />} />
+        </Route>
+        <Route path="/dashboard/categories">
+          <Route path="/dashboard/categories/" element={<Categories />} />
+        </Route>
+      </Route>
+    </Routes>
+    <ToastContainer />
+  </BrowserRouter>)
 }
 
 export default App

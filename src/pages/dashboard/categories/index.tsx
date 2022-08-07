@@ -10,7 +10,6 @@ import { useEffect, useRef, useState } from "react";
 const Categories = () => {
   const adminStore = useAdminStore()
   const categories = useRef(useAdminStore.getState().categories);
-  let [searchParams, setSearchParams] = useSearchParams();
 
   const [currentKey, setCurrentKey] = useState(Math.random())
   const [name, setName] = useState("")

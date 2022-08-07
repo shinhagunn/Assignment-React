@@ -52,7 +52,7 @@ const useAdminStore = create<AdminStore>((set, get) => ({
       });
       return product
     } catch (error) {
-      const product: Product = {}
+      const product = {} as Product
       return product
     }
   },

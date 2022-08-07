@@ -2,14 +2,6 @@ export default function addToast(type: string, mess: string, id: string) {
   const toast = document.createElement('div');
   toast.classList.add('toast', `toast-${type === 'Error' ? 'error' : 'success'}`);
 
-  const toast_icon = document.createElement('div');
-  toast_icon.classList.add('toast-icon');
-  toast_icon.innerHTML = `
-  <span>
-    ${type === 'Error' ? '<i class="fa-solid fa-xmark" />' : '<i class="fa-solid fa-check" />'}
-  </span>`;
-  toast.appendChild(toast_icon);
-
   const toast_text = document.createElement('div');
   toast_text.classList.add('toast-text');
   toast_text.innerHTML = `
